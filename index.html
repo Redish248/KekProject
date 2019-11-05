@@ -17,15 +17,15 @@
 </head>
 
 <body>
-    <div class="row">
-        <div class="col-lg-4 col-md-6">
-            <form class="form-group" onsubmit="event.preventDefault()">
-                <label for="name">Введите Ваше имя:</label>
-                <input class="form-control" type="text" name="name" id="name" />
-            </form>
-        </div>
+    <div id="language">
+        <label id="lang_label">Language:</label>
+        <button onClick="set_eng()">English</button>
+        <button onClick="set_rus()">Русский</button>
     </div>
-
+    <form class="form-group" onsubmit="event.preventDefault()">
+        <label for="name" id="name_label">Введите Ваше имя:</label>
+        <input class="form-control" type="text" name="name" id="name" />
+    </form>
     <div id="kekElement"></div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
